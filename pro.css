@@ -1,0 +1,140 @@
+@font-face {
+    font-family: oren;
+    src: url(Orenburg.ttf);
+}
+@font-face {
+    font-family: din;
+    src: url(DIN.ttf);
+}
+@font-face {
+    font-family: acquire;
+    src: url(Aquire-BW0ox.otf);
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body {
+    font-family: din;
+    background-color: #ffffff;
+   
+}
+
+.about {
+    font-family: oren;
+    font-weight: bold;
+   
+}
+.logo {
+   
+    font-size: 30px;
+    letter-spacing: 0.1em;
+   font-weight: bold;
+}
+
+
+video {
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* nav */
+.navbar {
+    background-color:rgba(255, 255, 255, 0.055);
+    color: rgb(255, 255, 255);
+    height: 70px;
+    font-family: oren;
+}
+.navbar-2 {
+    background-color: #040C26;
+    color: rgb(255, 255, 255);
+}
+
+
+.navbar li {
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.navbar a:hover{
+ border-bottom: 2px aqua solid;
+ color: rgb(183, 247, 247) !important;
+
+ transform: scaleX(1.2);
+transition: ease-in-out 0.3s;
+}
+#bg-vid {
+    position: relative;
+    top: -110px;
+    z-index: -1;
+}
+video {
+    display: block;
+}
+.bg {
+    width: 100%;
+    
+   object-fit: contain; 
+   display: grid;
+   
+   
+   
+}
+.text-end p {
+    font-family:acquire;
+  font-weight: bold;
+    font-size: 2.5em;
+    
+    color: #7683A9;
+}
+
+
+  @media only screen and (max-width:600px){
+.text-end p {
+    font-size: 1.5em;
+}
+  
+.typing-ani {
+    width: 15vw;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden ;
+    border-right: 3px solid;
+    font-size: 30px;
+   font-family: oren;
+  
+     
+  }   
+  }
+  
+  .typing-ani {
+    width: 30vw;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    
+   font-family: oren;
+  
+     
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }

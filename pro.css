@@ -1,0 +1,167 @@
+@font-face {
+    font-family: oren;
+    src: url(Orenburg.ttf);
+}
+@font-face {
+    font-family: din;
+    src: url(DIN.ttf);
+}
+@font-face {
+    font-family: acquire;
+    src: url(Aquire-BW0ox.otf);
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body {
+    font-family: din;
+  color: rgba(0, 255, 255, 0.562);
+   background-image: url(daniel-olah-dFA5XycbhoQ-unsplash.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+.logo {
+   
+    font-size: 30px;
+    letter-spacing: 0.1em;
+   font-weight: bold;
+}
+
+
+video {
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* nav */
+.navbar {
+    background-color:rgba(255, 255, 255, 0.055);
+    color: rgb(255, 255, 255);
+    height: 70px;
+    font-family: oren;
+}
+.navbar-2 {
+    background-color: #040C26;
+    color: rgb(255, 255, 255);
+}
+
+
+.navbar li {
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.navbar a:hover{
+ border-bottom: 2px aqua solid;
+ color: rgb(183, 247, 247) !important;
+
+ transform: scaleX(1.2);
+transition: ease-in-out 0.3s;
+}
+#bg-vid {
+    position: relative;
+    top: -110px;
+    z-index: -1;
+}
+video {
+    display: block;
+}
+.bg {
+    width: 100%;
+    
+   object-fit: contain; 
+   display: grid;
+   
+   
+   
+}
+.text-end p {
+    font-family:acquire;
+  font-weight: bold;
+    font-size: 2.5em;
+    
+    color: #7683A9;
+}
+
+
+
+  
+
+  
+  .heading {
+      font-family: oren;
+      color: aqua;
+  }
+
+  .bg-dark-blue {
+    background-color: #040C26;
+  }
+  .text-aqua {
+color: aqua;
+border-bottom-width: 1px  ;
+border-color: rgba(0, 255, 255, 0.562);
+
+  }
+  /* about us */
+  .about {
+    font-family: oren;
+    font-weight: bold;
+
+   
+}
+.glow {
+ 
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 50px aqua, 0 0 60px aqua, 0 0 70px aqua;
+  }
+  to {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.562), 0 0 30px rgba(0, 255, 255, 0.562), 0 0 40px rgba(0, 255, 255, 0.562), 0 0 50px rgba(0, 255, 255, 0.562), 0 0 60px rgba(0, 255, 255, 0.562), 0 0 70px rgba(0, 255, 255, 0.562), 0 0 80px rgba(0, 255, 255, 0.562);
+  }
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+  /* services */
+  
+.card {
+  border-width: 0 !important;
+}
+
+.overlay-text {
+    padding: 0!important;
+    background-color: #ffffff34;
+    backdrop-filter: blur(5px);
+height: 50%;
+position: absolute;
+    top: 50%;
+}
+.card img {
+  position: relative;
+}
+.overlay-text p {
+  font-size: 12px ;
+}
+
+.card-img-overlay {
+   padding: 0 !important;
+}
+.overlay-text i {
+  color: #ffbb00;
+}
